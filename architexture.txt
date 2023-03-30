@@ -1,0 +1,4 @@
+Header (social links + email)
+
+Intro -> About -> Tech Stack -> Skills Showcases -> Projects -> Contacts
+
