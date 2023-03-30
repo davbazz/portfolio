@@ -1,4 +1,4 @@
-import Hero from './components/Hero'
+// import Hero from './components/Hero'
 import Nav from './components/Nav'
 
 import { Inter } from 'next/font/google'
