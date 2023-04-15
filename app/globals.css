@@ -42,12 +42,6 @@
   right: -30px;
 }
 
-.show-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .vertical-text {
   writing-mode: vertical-rl;
   text-orientation: mixed;
