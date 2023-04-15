@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { Outfit } from 'next/font/google'
 
 const outfit = Outfit({
@@ -9,11 +10,45 @@ const outfit = Outfit({
 })
 
 export default function Nav() {
-  let checkMenu: boolean = false
+  const [isMenuOpen, setIsMenuOpen] = useState(true)
+
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen)
+  //   const bodyEl = document.querySelector('body')
+  //   const x1El = document.querySelector('.x-1')
+  //   const x2El = document.querySelector('.x-2')
+  //   const x3El = document.querySelector('.x-3')
+  //   const menuEl = document.querySelector('.menu')
+  //   if (isMenuOpen) {
+  //     bodyEl?.classList.add('disable-scroll')
+  //     x1El?.classList.add('close-x-1')
+  //     x2El?.classList.add('close-x-2')
+  //     x3El?.classList.add('close-x-3')
+  //     menuEl?.classList.remove('move-menu-off')
+  //     menuEl?.classList.add('move-menu-on')
+  //   } else {
+  //     bodyEl?.classList.remove('disable-scroll')
+  //     x1El?.classList.remove('close-x-1')
+  //     x2El?.classList.remove('close-x-2')
+  //     x3El?.classList.remove('close-x-3')
+  //     menuEl?.classList.remove('move-menu-on')
+  //     menuEl?.classList.add('move-menu-off')
+  //     setTimeout(() => {
+  //       menuEl?.classList.remove('show-menu')
+  //     }, 310)
+  //   }
+  // }
+
+  // useEffect(() => {
+    
+
+    
+  // }, [toggleMenu])
+// let checkMenu: boolean = false
 
   const toggleMenu = () => {
-    checkMenu = !checkMenu
-    if (checkMenu === true) {
+    setIsMenuOpen(!isMenuOpen)
+    if (isMenuOpen) {
       document.querySelector('body')?.classList.add('disable-scroll')
       document.querySelector('.x-1')?.classList.add('close-x-1')
       document.querySelector('.x-2')?.classList.add('close-x-2')
@@ -23,8 +58,7 @@ export default function Nav() {
         document.querySelector('.menu')?.classList.remove('move-menu-off')
         document.querySelector('.menu')?.classList.add('move-menu-on')
       }, 1)
-    }
-    if (checkMenu === false) {
+    } else {
       document.querySelector('body')?.classList.remove('disable-scroll')
       document.querySelector('.x-1')?.classList.remove('close-x-1')
       document.querySelector('.x-2')?.classList.remove('close-x-2')
@@ -111,13 +145,20 @@ export default function Nav() {
           onClick={toggleMenu}
           className="close z-10 flex cursor-pointer flex-col items-end justify-between gap-[5px] p-[3px] duration-500 md:hidden"
         >
-          <span className="x-1 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300"></span>
-          <span className="x-2 inline-block h-[3px] w-[20px] rounded-md bg-black duration-300"></span>
-          <span className="x-3 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300"></span>
+          <span 
+            className="x-1 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300">
+          </span>
+          <span 
+            className="x-2 inline-block h-[3px] w-[20px] rounded-md bg-black duration-300">
+          </span>
+          <span 
+            className="x-3 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300">
+          </span>
         </div>
       </div>
 
-      <aside className="menu move-menu-off menu-width fixed top-0 hidden h-[100dvh] rounded-l-lg bg-white px-[30px] py-[30px] duration-300 md:w-[320px]">
+      <aside 
+        className="menu move-menu-off menu-width fixed top-0 hidden h-[100dvh] rounded-l-lg bg-white px-[30px] py-[30px] duration-300 md:w-[320px]">
         <div className="mt-[70px]">
           <ul className="mx-auto flex flex-col items-center justify-between gap-6 text-[17px]">
             <li className="block w-full">
