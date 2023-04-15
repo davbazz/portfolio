@@ -1,20 +1,27 @@
-// import Hero from './components/Hero'
 import Nav from './components/Nav'
+import Hero from './components/Hero'
+import About from './components/About'
+import SocialLinks from './components/SocialLinks'
+import Email from './components/Email'
 
 import { Inter } from 'next/font/google'
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: '400',
+  weight: ['400', '500', '700', '800'],
   display: 'swap',
 })
 
 export default function Home() {
   return (
-    <main className={`${inter.className}`}>
-      <div className="mx-auto">
+    <main className={`${inter.className} overflow-hidden`}>
+      <div className="relative mx-auto px-[30px] lg:max-w-[calc(100vw-80px)] lg:px-0 2xl:max-w-[calc(100vw-140px)]">
         <Nav />
-        {/* <Hero/> */}
+        <Hero />
+        <About />
+
+        <SocialLinks />
+        <Email />
       </div>
     </main>
   )
