@@ -1,6 +1,7 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
+import Work from './components/Work'
 import SocialLinks from './components/SocialLinks'
 import Email from './components/Email'
 
@@ -16,11 +17,12 @@ const inter = Inter({
 export default function Home() {
   return (
     <main className={`${inter.className} overflow-hidden`}>
-      <div className="relative mx-auto px-[30px] lg:max-w-[calc(100vw-80px)] lg:px-0 2xl:max-w-[calc(100vw-140px)]">
+      <div className="relative mx-auto px-[20px] lg:max-w-[calc(100vw-80px)] lg:px-0 2xl:max-w-[calc(100vw-140px)]">
         <Nav />
         <Hero />
         <About />
         <Skills />
+        <Work />
 
         <SocialLinks />
         <Email />

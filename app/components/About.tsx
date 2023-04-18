@@ -4,7 +4,7 @@ import photo from '../../public/David.jpg'
 export default function About() {
   return (
     <section
-      className="mt-[90px] py-[40px] sm:py-[50px] md:py-[70px] lg:py-[120px] lg:mt-[50px] lg:max-w-[74%] xl:max-w-[68%] lg:mx-auto xl:mt-[100px] 2xl:max-w-[1000px]"
+      className="mt-[20px] py-[40px] sm:py-[50px] md:py-[70px] lg:py-[120px] lg:mt-[50px] lg:max-w-[74%] xl:max-w-[68%] lg:mx-auto xl:mt-[100px] 2xl:max-w-[1000px]"
       id="about"
     >
       <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-[5%]">

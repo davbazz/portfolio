@@ -63,20 +63,20 @@ export default function Nav() {
             </li>
             <li>
               <a
-                href="#playground"
+                href="#work"
                 className="flex w-full items-center justify-center gap-2"
               >
                 <span className="">03. </span>
-                Playground
+                Work
               </a>
             </li>
             <li>
               <a
-                href="#work"
+                href="#playground"
                 className="flex w-full items-center justify-center gap-2"
               >
                 <span className="">04. </span>
-                Work
+                Playground
               </a>
             </li>
             <li>
@@ -136,22 +136,22 @@ export default function Nav() {
             </li>
             <li className="block w-full">
               <a
-                href="#playground"
-                className="flex w-full flex-col items-center justify-center"
-                onClick={toggleMenu}
-              >
-                <span>03 . </span>
-                Playground
-              </a>
-            </li>
-            <li className="block w-full">
-              <a
                 href="#work"
                 className="flex w-full flex-col items-center justify-center"
                 onClick={toggleMenu}
               >
-                <span>04 . </span>
+                <span>03 . </span>
                 Work
+              </a>
+            </li>
+            <li className="block w-full">
+              <a
+                href="#playground"
+                className="flex w-full flex-col items-center justify-center"
+                onClick={toggleMenu}
+              >
+                <span>04 . </span>
+                Playground
               </a>
             </li>
             <li className="block w-full">

@@ -24,9 +24,11 @@ export default function Skills() {
 				<span className="mt-[3px] text-[19px] font-normal sm:mt-[4px] md:text-[20px] xl:text-[21px]">
 					02.
 				</span>
+
 				<h2 className="whitespace-nowrap mr-[10px] text-[26px] font-semibold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
 					Skills
 				</h2>
+
 				<span className="inline-block h-[1px] w-full lg:w-[70%] bg-black"></span>
 			</div>
 
@@ -35,6 +37,7 @@ export default function Skills() {
 			</p>
 
 			<div className='flex flex-col md:flex-row gap-8 mt-[40px] text-[16px] md:text-[17px] xl:text-[18px]'>
+				
 				<ul className='flex flex-col gap-8'>
 					<li className="flex justify-start items-center gap-6">
 						<div className='w-16 h-16'>
