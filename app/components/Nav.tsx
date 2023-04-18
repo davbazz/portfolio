@@ -19,11 +19,8 @@ export default function Nav() {
       document.querySelector('.x-1')?.classList.add('close-x-1')
       document.querySelector('.x-2')?.classList.add('close-x-2')
       document.querySelector('.x-3')?.classList.add('close-x-3')
-      // document.querySelector('.menu')?.classList.add('show-menu')
       document.querySelector('.menu')?.classList.remove('move-menu-off')
       document.querySelector('.menu')?.classList.add('move-menu-on')
-      // setTimeout(() => {
-      // }, 1)
     } else {
       document.querySelector('body')?.classList.remove('disable-scroll')
       document.querySelector('.x-1')?.classList.remove('close-x-1')
@@ -31,9 +28,6 @@ export default function Nav() {
       document.querySelector('.x-3')?.classList.remove('close-x-3')
       document.querySelector('.menu')?.classList.remove('move-menu-on')
       document.querySelector('.menu')?.classList.add('move-menu-off')
-      // setTimeout(() => {
-      //   document.querySelector('.menu')?.classList.remove('show-menu')
-      // }, 310)
     }
   }
 
@@ -42,13 +36,13 @@ export default function Nav() {
       <div className="flex items-center justify-between">
         <a
           href="http://localhost:3000/"
-          className={`${outfit.className} text-[26px] md:mt-[-8px] md:text-[28px] lg:text-[30px] xl:mt-[-10px] xl:text-[30px] 2xl:text-[32px]`}
+          className={`${outfit.className} text-[24px] md:mt-[-8px] md:text-[26px] lg:text-[28px] xl:mt-[-10px] xl:text-[30px] 2xl:text-[32px]`}
         >
           davbaz
         </a>
 
         <div className="hidden items-center justify-between gap-8 md:flex lg:gap-12">
-          <ul className="flex items-center justify-between gap-5 text-[15px] lg:gap-10 lg:text-[16px] 2xl:text-[18px]">
+          <ul className="flex items-center justify-between gap-5 text-[13px] lg:gap-8 lg:text-[15px] 2xl:text-[18px]">
             <li>
               <a
                 href="#about"
@@ -100,7 +94,7 @@ export default function Nav() {
             <a
               href="/resume.pdf"
               target="_blank"
-              className="block w-full py-[9px] text-center text-[15px] sm:text-[17px] md:text-[15px] lg:text-[16px] xl:py-[10px] 2xl:text-[18px]"
+              className="block w-full py-[9px] text-center text-[13px] lg:text-[16px] xl:py-[10px] 2xl:text-[18px]"
             >
               Resume
             </a>
@@ -109,22 +103,15 @@ export default function Nav() {
 
         <div
           onClick={toggleMenu}
-          className="close z-10 flex cursor-pointer flex-col items-end justify-between gap-[5px] p-[3px] duration-500 md:hidden"
+          className="close z-10 flex cursor-pointer flex-col items-end justify-between gap-[5px] p-[3px] md:hidden"
         >
-          <span 
-            className="x-1 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300">
-          </span>
-          <span 
-            className="x-2 inline-block h-[3px] w-[20px] rounded-md bg-black duration-300">
-          </span>
-          <span 
-            className="x-3 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300">
-          </span>
+          <span className="x-1 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300"></span>
+          <span className="x-2 inline-block h-[3px] w-[20px] rounded-md bg-black duration-300"></span>
+          <span className="x-3 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300"></span>
         </div>
       </div>
 
-      <aside 
-        className="menu move-menu-off menu-width fixed top-0 flex flex-col justify-between h-[100dvh] rounded-l-lg bg-white px-[30px] py-[30px] duration-300 md:w-[320px]">
+      <aside className="menu move-menu-off menu-width fixed top-0 flex h-[100dvh] flex-col justify-between rounded-l-lg bg-white px-[30px] py-[30px] duration-300 md:w-[320px]">
         <div className="mt-[70px]">
           <ul className="mx-auto flex flex-col items-center justify-between gap-6 text-[17px]">
             <li className="block w-full">
@@ -141,6 +128,7 @@ export default function Nav() {
               <a
                 href="#skills"
                 className="flex w-full flex-col items-center justify-center"
+                onClick={toggleMenu}
               >
                 <span>02 . </span>
                 Skills
@@ -150,6 +138,7 @@ export default function Nav() {
               <a
                 href="#playground"
                 className="flex w-full flex-col items-center justify-center"
+                onClick={toggleMenu}
               >
                 <span>03 . </span>
                 Playground
@@ -159,6 +148,7 @@ export default function Nav() {
               <a
                 href="#work"
                 className="flex w-full flex-col items-center justify-center"
+                onClick={toggleMenu}
               >
                 <span>04 . </span>
                 Work
@@ -168,6 +158,7 @@ export default function Nav() {
               <a
                 href="#contact"
                 className="flex w-full flex-col items-center justify-center"
+                onClick={toggleMenu}
               >
                 <span>05 . </span>
                 Contact
