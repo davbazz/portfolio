@@ -23,11 +23,11 @@ export default function Work() {
 			</div>
 
 			<ul className="flex flex-col gap-10 md:gap-20 lg:gap-32 2xl:gap-40 mt-[40px] md:mt-[80px]">
-				<li className="relative px-[24px] py-[30px] lg:px-0 md:py-0">
+				<li className="relative px-[24px] py-[30px] lg:px-0 md:py-0 overflow-hidden rounded-lg">
 					<Image 
 						src={Stocks} 
 						alt="Stocks"
-						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px] hover:blur-0 md:bottom-0 md:left-[24px] lg:left-0 md:max-w-[calc(60%-24px)] md:blur-[5px] lg:max-w-[53%]"
+						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px] hover:blur-0 md:bottom-0 md:left-[24px] lg:left-0 md:max-w-[calc(60%-24px)] md:blur-[5px] lg:max-w-[53%] rounded-2xl"
 					/>
 
 					<div>
@@ -99,11 +99,11 @@ export default function Work() {
 					</div>
 				</li>
 
-				<li className="relative px-[24px] py-[30px] lg:px-0 md:py-0 ">
+				<li className="relative px-[24px] py-[30px] lg:px-0 md:py-0 overflow-hidden rounded-lg">
 					<Image 
 						src={Game} 
 						alt="Game"
-						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[40px] md:blur-[5px] md:left-[40%] md:max-w-[calc(60%-24px)] lg:left-[47%] lg:max-w-[53%]"
+						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[40px] md:blur-[5px] md:left-[40%] md:max-w-[calc(60%-24px)] lg:left-[47%] lg:max-w-[53%] rounded-2xl"
 					/>
 
 					<div>
@@ -174,11 +174,11 @@ export default function Work() {
 					</div>
 				</li>
 
-				<li className="relative px-[24px] py-[30px] lg:px-0 md:py-0">
+				<li className="relative px-[24px] py-[30px] lg:px-0 md:py-0 overflow-hidden rounded-lg">
 					<Image 
 						src={Starwars} 
 						alt="Starwars"
-						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px] hover:blur-0 md:bottom-0 md:left-[24px] lg:left-0 md:max-w-[calc(60%-24px)] md:blur-[5px] lg:max-w-[53%]"
+						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px] hover:blur-0 md:bottom-0 md:left-[24px] lg:left-0 md:max-w-[calc(60%-24px)] md:blur-[5px] lg:max-w-[53%] rounded-2xl"
 					/>
 
 					<div>
