@@ -17,7 +17,7 @@ import Database from '../../public/database.svg'
 export default function Skills() {
 	return (
 		<section
-			className="mt-[20px] py-[40px] sm:py-[50px] md:py-[70px] lg:py-[100px] lg:max-w-[64%] lg:mx-auto xl:py-[120px] xl:max-w-[58%] 2xl:max-w-[800px]"
+			className="mt-[40px] py-[40px] sm:py-[50px] md:py-[70px] lg:py-[100px] lg:max-w-[64%] lg:mx-auto xl:py-[120px] xl:max-w-[58%] 2xl:max-w-[800px]"
 			id="skills"
 		>
 			<div className="flex flex-nowrap justify-start items-center gap-[8px] md:gap-[13px]">
@@ -25,7 +25,7 @@ export default function Skills() {
 					02.
 				</span>
 
-				<h2 className="whitespace-nowrap mr-[10px] text-[26px] font-semibold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
+				<h2 className="whitespace-nowrap mr-[10px] text-[26px] font-bold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
 					Skills
 				</h2>
 
@@ -37,7 +37,7 @@ export default function Skills() {
 			</p>
 
 			<div className='flex flex-col md:flex-row gap-8 mt-[40px] text-[16px] md:text-[17px] xl:text-[18px]'>
-				
+
 				<ul className='flex flex-col gap-8'>
 					<li className="flex justify-start items-center gap-6">
 						<div className='w-16 h-16'>

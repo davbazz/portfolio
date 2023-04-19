@@ -13,7 +13,7 @@ export default function About() {
             <span className="mt-[3px] text-[19px] font-normal sm:mt-[4px] md:text-[20px] xl:text-[21px]">
               01.
             </span>
-            <h2 className="whitespace-nowrap mr-[10px] text-[26px] font-semibold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
+            <h2 className="whitespace-nowrap mr-[10px] text-[26px] font-bold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
               About Me
             </h2>
             <span className="inline-block h-[1px] w-full bg-black "></span>
