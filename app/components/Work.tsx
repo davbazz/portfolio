@@ -6,7 +6,7 @@ import Starwars from "../../public/Starwars.png"
 export default function Work() {
 	return (
 		<section
-			className="mx-auto mt-[20px] py-[40px] sm:py-[50px] md:py-[70px] lg:py-[100px] lg:px-[80px] xl:py-[120px] xl:px-[150px] 2xl:max-w-[1140px]"
+			className="mx-auto mt-[20px] py-[40px] sm:py-[50px] md:py-[70px] lg:py-[100px] lg:px-[80px] xl:py-[120px] xl:px-[150px] 2xl:px-0 2xl:max-w-[1140px]"
 			id="work"
 		>
 
@@ -19,29 +19,29 @@ export default function Work() {
 					Some things I've built
 				</h2>
 
-				<span className="inline-block h-[1px] w-full lg:w-[70%] bg-black"></span>
+				<span className="inline-block h-[1px] w-full lg:w-[300px] bg-black"></span>
 			</div>
 
-			<ul className="flex flex-col gap-10 mt-[40px]">
-				<li className="relative px-[24px] py-[30px]">
+			<ul className="flex flex-col gap-10 md:gap-20 lg:gap-32 2xl:gap-40 mt-[40px] md:mt-[80px]">
+				<li className="relative px-[24px] py-[30px] lg:px-0 md:py-0">
 					<Image 
 						src={Stocks} 
 						alt="Stocks"
-						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px]"
+						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px] hover:blur-0 md:bottom-0 md:left-[24px] lg:left-0 md:max-w-[calc(60%-24px)] md:blur-[5px] lg:max-w-[53%]"
 					/>
 
 					<div>
-						<p className="text-[14px] md:text-[15px]">
+						<p className="text-[14px] md:text-[15px] md:text-right">
 							Featured Project
 						</p>
-						<h3 className="text-[23px] font-bold">
+						<h3 className="text-[23px] font-bold md:text-right md:text-[25px] xl:text-[27px]">
 							Stock Tracker App
 						</h3>
-						<p className="mt-[30px] text-[16px] md:text-[17px] xl:text-[18px]">
+						<p className="mt-[30px] text-[16px] md:text-[17px] xl:text-[18px] md:block md:ml-[40%] md:w-[60%] md:text-right md:bg-slate-300 md:py-[20px] md:px-[30px] md:rounded-md lg:w-[53%] lg:ml-[47%]">
 							An application that allows users receive data on stocks in real time, including several price values, daily overall dynamic and latest news.
 						</p>
 
-						<ul className="flex justify-start flex-wrap gap-x-3 mt-[30px] text-[14px] leading-[23px] md:text-[15px]">
+						<ul className="flex justify-start md:justify-end flex-wrap gap-x-3 mt-[30px] text-[14px] leading-[23px] md:text-[15px]">
 							<li>JavaScript</li>
 							<li>React</li>
 							<li>Tailwind</li>
@@ -50,8 +50,12 @@ export default function Work() {
 							<li>Vite</li>
 						</ul>
 
-						<div className="flex justify-start items-center mt-[16px] ml-[-8px] mb-[-8px]">
-							<a className="p-[8px] cursor-pointer">
+						<div className="flex justify-start items-center md:justify-end mt-[16px] ml-[-8px] mb-[-8px] md:ml-0 md:mr-[-8px]">
+							<a 
+								href="https://github.com/davbazz/stock-tracker"
+								target="_blank"
+								className="p-[8px] cursor-pointer"
+							>
 								<svg 
 									xmlns="http://www.w3.org/2000/svg" 
 									role="img" 
@@ -69,7 +73,11 @@ export default function Work() {
 									</path>
 								</svg>
 							</a>
-							<a className="p-[8px] cursor-pointer">
+							<a 
+								href="https://stock-tracker-portfolio.netlify.app"
+								target="_blank"
+								className="p-[8px] cursor-pointer"
+							>
 								<svg 
 									xmlns="http://www.w3.org/2000/svg" 
 									role="img" 
@@ -91,21 +99,21 @@ export default function Work() {
 					</div>
 				</li>
 
-				<li className="relative px-[24px] py-[30px]">
+				<li className="relative px-[24px] py-[30px] lg:px-0 md:py-0 ">
 					<Image 
 						src={Game} 
 						alt="Game"
-						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px]"
+						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[40px] md:blur-[5px] md:left-[40%] md:max-w-[calc(60%-24px)] lg:left-[47%] lg:max-w-[53%]"
 					/>
 
 					<div>
 						<p className="text-[14px] md:text-[15px]">
 							Featured Project
 						</p>
-						<h3 className="text-[23px] font-bold">
+						<h3 className="text-[23px] font-bold md:text-[25px] xl:text-[27px]">
 							Memory Cards Game
 						</h3>
-						<p className="mt-[30px] text-[16px] md:text-[17px] xl:text-[18px]">
+						<p className="mt-[30px] text-[16px] md:text-[17px] xl:text-[18px] md:block md:w-[60%] md:bg-slate-300 md:py-[20px] md:px-[30px] md:rounded-md lg:w-[53%]">
 							A simple game where a user clicks on cards to flip them & remember which one is which. The game ends when all cards are mathed. I choce Van Gogh art to be the matching pictures.
 						</p>
 
@@ -117,8 +125,12 @@ export default function Work() {
 							<li>Git</li>
 						</ul>
 
-						<div className="flex justify-start items-center mt-[16px] ml-[-8px] mb-[-8px]">
-							<a className="p-[8px] cursor-pointer">
+						<div className="flex justify-start items-center mt-[16px] ml-[-8px] mb-[-8px] md:mb-0">
+							<a 
+								href="https://github.com/davbazz/memory-cards"
+								target="_blank"
+								className="p-[8px] cursor-pointer"
+							>
 								<svg 
 									xmlns="http://www.w3.org/2000/svg" 
 									role="img" 
@@ -136,7 +148,11 @@ export default function Work() {
 									</path>
 								</svg>
 							</a>
-							<a className="p-[8px] cursor-pointer">
+							<a 
+								href="https://memory-cards-portfolio.netlify.app"
+								target="_blank"
+								className="p-[8px] cursor-pointer"
+							>
 								<svg 
 									xmlns="http://www.w3.org/2000/svg" 
 									role="img" 
@@ -158,25 +174,25 @@ export default function Work() {
 					</div>
 				</li>
 
-				<li className="relative px-[24px] py-[30px]">
+				<li className="relative px-[24px] py-[30px] lg:px-0 md:py-0">
 					<Image 
 						src={Starwars} 
 						alt="Starwars"
-						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[10px]"
+						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px] hover:blur-0 md:bottom-0 md:left-[24px] lg:left-0 md:max-w-[calc(60%-24px)] md:blur-[5px] lg:max-w-[53%]"
 					/>
 
 					<div>
-						<p className="text-[14px] md:text-[15px]">
+						<p className="text-[14px] md:text-[15px] md:text-right">
 							Featured Project
 						</p>
-						<h3 className="text-[23px] font-bold">
+						<h3 className="text-[23px] font-bold md:text-right md:text-[25px] xl:text-[27px]">
 							Starwars Characters
 						</h3>
-						<p className="mt-[30px] text-[16px] md:text-[17px] xl:text-[18px]">
-							A simple website to look for starwars characters
+						<p className="mt-[30px] text-[16px] md:text-[17px] xl:text-[18px] md:block md:ml-[40%] md:w-[60%] md:text-right md:bg-slate-300 md:py-[20px] md:px-[30px] md:rounded-md lg:w-[53%] lg:ml-[47%]">
+							A simple UI empowered by swapi API to search starwars characters by their names. The response data comes with name, age and gender.
 						</p>
 
-						<ul className="flex justify-start flex-wrap gap-x-3 mt-[30px] text-[14px] leading-[23px] md:text-[15px]">
+						<ul className="flex justify-start md:justify-end flex-wrap gap-x-3 mt-[30px] text-[14px] leading-[23px] md:text-[15px]">
 							<li>TypeScript</li>
 							<li>React</li>
 							<li>Swapi API</li>
@@ -184,8 +200,13 @@ export default function Work() {
 							<li>Vite</li>
 							<li>Git</li>
 						</ul>
-						<div className="flex justify-start items-center mt-[16px] ml-[-8px] mb-[-8px]">
-							<a className="p-[8px] cursor-pointer">
+
+						<div className="flex justify-start items-center md:justify-end mt-[16px] ml-[-8px] mb-[-8px] md:ml-0 md:mr-[-8px]">
+							<a 
+								href="https://github.com/davbazz/starwars-test"
+								target="_blank"
+								className="p-[8px] cursor-pointer"
+							>
 								<svg 
 									xmlns="http://www.w3.org/2000/svg" 
 									role="img" 
@@ -203,7 +224,11 @@ export default function Work() {
 									</path>
 								</svg>
 							</a>
-							<a className="p-[8px] cursor-pointer">
+							<a 
+								href="https://starwars-pagination-test.netlify.app"
+								target="_blank"
+								className="p-[8px] cursor-pointer"
+							>
 								<svg 
 									xmlns="http://www.w3.org/2000/svg" 
 									role="img" 

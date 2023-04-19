@@ -29,7 +29,7 @@ export default function Skills() {
 					Skills
 				</h2>
 
-				<span className="inline-block h-[1px] w-full lg:w-[70%] bg-black"></span>
+				<span className="inline-block h-[1px] w-full lg:w-[50%] bg-black"></span>
 			</div>
 
 			<p className='mt-[40px] text-[17px] md:text-[18px]'>
