@@ -27,6 +27,7 @@ export default function Work() {
 					<Image 
 						src={Stocks} 
 						alt="Stocks"
+						loading = 'eager'
 						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px] hover:blur-0 md:bottom-0 md:left-[24px] lg:left-0 md:max-w-[calc(60%-24px)] md:blur-[5px] lg:max-w-[53%] rounded-2xl"
 					/>
 
@@ -103,6 +104,7 @@ export default function Work() {
 					<Image 
 						src={Game} 
 						alt="Game"
+						loading = 'eager'
 						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[40px] md:blur-[5px] md:left-[40%] md:max-w-[calc(60%-24px)] lg:left-[47%] lg:max-w-[53%] rounded-2xl"
 					/>
 
@@ -178,6 +180,7 @@ export default function Work() {
 					<Image 
 						src={Starwars} 
 						alt="Starwars"
+						loading = 'eager'
 						className="absolute top-0 left-0 h-full w-full z-[-1] blur-[30px] hover:blur-0 md:bottom-0 md:left-[24px] lg:left-0 md:max-w-[calc(60%-24px)] md:blur-[5px] lg:max-w-[53%] rounded-2xl"
 					/>
 
