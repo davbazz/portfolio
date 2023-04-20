@@ -11,7 +11,6 @@
 }
 
 nav {
-  /* transition: all 0.3s ease; */
   transform: translateZ(0);
   perspective: 1000;
   -webkit-backface-visibility: hidden;
@@ -71,4 +70,10 @@ nav {
 .photo:hover:after {
   top: 14px;
   left: 14px;
+}
+
+@media screen and (max-width: 640px) {
+  body::-webkit-scrollbar {
+    display: none;
+  }
 }

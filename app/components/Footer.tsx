@@ -10,7 +10,7 @@ const mono = DM_Mono({
 
 export default function Footer() {
   return (
-    <footer className="mx-auto mt-[50px] py-[20px] sm:mt-[70px] md:mt-[90px] lg:py-0">
+    <footer className="mx-auto mt-[70px] py-[20px] md:mt-[90px] lg:py-0">
       <div className="flex flex-col justify-center gap-3 text-center lg:block">
         <ul className="flex items-center justify-center gap-5 sm:gap-7 lg:hidden">
           <li>
@@ -76,6 +76,7 @@ export default function Footer() {
 
         <Link
           href="https://github.com/davbazz/portfolio"
+          target="_blank"
           className={`${mono.className} mx-auto inline-block px-[10px] py-[10px] text-[14px] md:text-[15px] lg:px-[60px] lg:py-[40px]`}
         >
           Developed by David Bazashvili

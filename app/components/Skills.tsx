@@ -144,7 +144,7 @@ export default function Skills() {
               <Image src={Go} alt={`Go`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">{`<`}1 year</p>
+              <p className="font-semibold">{`<`}1 year</p>             
               <p>
                 <span className="italic">Golang</span> - a programming language
               </p>
