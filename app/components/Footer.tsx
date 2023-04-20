@@ -76,7 +76,7 @@ export default function Footer() {
 
         <Link
           href="https://github.com/davbazz/portfolio"
-          className={`${mono.className} mx-auto inline-block px-[10px] py-[10px] text-[14px] font-semibold md:text-[15px] lg:px-[60px] lg:py-[40px]`}
+          className={`${mono.className} mx-auto inline-block px-[10px] py-[10px] text-[14px] md:text-[15px] lg:px-[60px] lg:py-[40px]`}
         >
           Developed by David Bazashvili
         </Link>
