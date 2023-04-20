@@ -4,7 +4,7 @@ import photo from '../../public/David.jpg'
 export default function About() {
   return (
     <section
-      className="mt-[20px] py-[40px] sm:py-[50px] md:py-[70px] lg:py-[120px] lg:mt-[50px] lg:max-w-[74%] xl:max-w-[68%] lg:mx-auto xl:mt-[100px] 2xl:max-w-[1000px]"
+      className="mt-[20px] py-[40px] sm:py-[50px] md:py-[70px] lg:mx-auto lg:mt-[50px] lg:max-w-[74%] lg:py-[120px] xl:mt-[100px] xl:max-w-[68%] 2xl:max-w-[1000px]"
       id="about"
     >
       <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-[5%]">
@@ -13,7 +13,7 @@ export default function About() {
             <span className="mt-[3px] text-[19px] font-normal sm:mt-[4px] md:text-[20px] xl:text-[21px]">
               01.
             </span>
-            <h2 className="whitespace-nowrap mr-[10px] text-[26px] font-bold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
+            <h2 className="mr-[10px] whitespace-nowrap text-[26px] font-bold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
               About Me
             </h2>
             <span className="inline-block h-[1px] w-full bg-black "></span>
@@ -45,33 +45,16 @@ export default function About() {
             skills. After all, the world of programming is constantly evolving,
             and I'm excited to see where this journey takes me next.
           </p>
-          {/* <p className='mt-[20px] text-[16px] md:text-[18px]'>
-            If you're interested in learning more about the technologies I've been
-            working with recently, here's a short list:
-          </p> */}
-
-          {/* <div>
-            <ul>
-              <li>TypeScript</li>
-              <li>Node.js</li>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>API's</li>
-            </ul>
-
-            <ul>
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Tailwind</li>
-              <li>Databases</li>
-            </ul>
-          </div> */}
         </div>
 
         <div className="lg:w-[35%]">
           <div className="photo relative mx-auto mt-[50px] w-[70%] max-w-[280px] rounded-md sm:max-w-[320px] lg:mx-0 lg:mt-[87px] lg:w-full lg:max-w-[320px]">
-            <Image src={photo} alt="David's photo" className="rounded-md" />
+            <Image
+              src={photo}
+              alt="David's photo"
+              className="rounded-md"
+              loading="eager"
+            />
           </div>
         </div>
       </div>

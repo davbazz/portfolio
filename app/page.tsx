@@ -2,6 +2,7 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
 import Work from './components/Work'
+import Contact from './components/Contact'
 import SocialLinks from './components/SocialLinks'
 import Email from './components/Email'
 
@@ -23,6 +24,7 @@ export default function Home() {
         <About />
         <Skills />
         <Work />
+        <Contact />
 
         <SocialLinks />
         <Email />
