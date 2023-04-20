@@ -12,14 +12,22 @@ import Git from '../../public/git.svg'
 import API from '../../public/api.svg'
 import Database from '../../public/database.svg'
 
+import { DM_Mono } from 'next/font/google'
+
+const mono = DM_Mono({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+})
+
 export default function Skills() {
   return (
     <section
       className="mt-[40px] py-[40px] sm:py-[50px] md:py-[70px] lg:mx-auto lg:max-w-[64%] lg:py-[100px] xl:max-w-[58%] xl:py-[120px] 2xl:max-w-[800px]"
       id="skills"
     >
-      <div className="flex flex-nowrap items-center justify-start gap-[8px] md:gap-[13px]">
-        <span className="mt-[3px] text-[19px] font-normal sm:mt-[4px] md:text-[20px] xl:text-[21px]">
+      <div className="flex flex-nowrap items-center justify-start gap-[2px] md:gap-[5px]">
+        <span className={`${mono.className} mt-[3px] text-[20px] font-normal sm:mt-[4px] md:text-[21px] xl:text-[22px]`}>
           02.
         </span>
 
@@ -30,7 +38,7 @@ export default function Skills() {
         <span className="inline-block h-[1px] w-full bg-black lg:w-[50%]"></span>
       </div>
 
-      <p className="mt-[40px] text-[17px] md:text-[18px]">
+      <p className={`${mono.className} mt-[40px] text-[17px] md:text-[18px]`}>
         Here are some of the technologies I use:
       </p>
 

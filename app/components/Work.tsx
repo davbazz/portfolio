@@ -3,14 +3,22 @@ import Stocks from '../../public/Stocks.png'
 import Game from '../../public/Game.png'
 import Starwars from '../../public/Starwars.png'
 
+import { DM_Mono } from 'next/font/google'
+
+const mono = DM_Mono({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+})
+
 export default function Work() {
   return (
     <section
       className="mx-auto mt-[20px] py-[40px] sm:py-[50px] md:py-[70px] lg:py-[100px] lg:px-[80px] xl:py-[120px] xl:px-[150px] 2xl:max-w-[1140px] 2xl:px-0"
       id="work"
     >
-      <div className="flex flex-nowrap items-center justify-start gap-[8px] md:gap-[13px]">
-        <span className="mt-[3px] text-[19px] font-normal sm:mt-[4px] md:text-[20px] xl:text-[21px]">
+      <div className="flex flex-nowrap items-center justify-start gap-[2px] md:gap-[5px]">
+				<span className={`${mono.className} mt-[3px] text-[20px] font-normal sm:mt-[4px] md:text-[21px] xl:text-[22px]`}>
           03.
         </span>
 
@@ -31,7 +39,7 @@ export default function Work() {
           />
 
           <div>
-            <p className="text-[14px] md:text-right md:text-[15px]">
+            <p className={`${mono.className} text-[14px] md:text-right md:text-[15px]`}>
               Featured Project
             </p>
             <h3 className="text-[23px] font-bold md:text-right md:text-[25px] xl:text-[27px]">
@@ -43,7 +51,7 @@ export default function Work() {
               latest news.
             </p>
 
-            <ul className="mt-[30px] flex flex-wrap justify-start gap-x-3 text-[14px] leading-[23px] md:justify-end md:text-[15px]">
+            <ul className={`${mono.className} mt-[30px] flex flex-wrap justify-start gap-x-3 text-[14px] leading-[23px] md:justify-end md:text-[15px]`}>
               <li>JavaScript</li>
               <li>React</li>
               <li>Tailwind</li>
@@ -108,7 +116,7 @@ export default function Work() {
           />
 
           <div>
-            <p className="text-[14px] md:text-[15px]">Featured Project</p>
+            <p className={`${mono.className} text-[14px] md:text-[15px]`}>Featured Project</p>
             <h3 className="text-[23px] font-bold md:text-[25px] xl:text-[27px]">
               Memory Cards Game
             </h3>
@@ -118,7 +126,7 @@ export default function Work() {
               choce Van Gogh art to be the matching pictures.
             </p>
 
-            <ul className="mt-[30px] flex flex-wrap justify-start gap-x-3 text-[14px] leading-[23px] md:text-[15px]">
+            <ul className={`${mono.className} mt-[30px] flex flex-wrap justify-start gap-x-3 text-[14px] leading-[23px] md:text-[15px]`}>
               <li>JavaScript</li>
               <li>React</li>
               <li>Tailwind</li>
@@ -182,7 +190,7 @@ export default function Work() {
           />
 
           <div>
-            <p className="text-[14px] md:text-right md:text-[15px]">
+            <p className={`${mono.className} text-[14px] md:text-right md:text-[15px]`}>
               Featured Project
             </p>
             <h3 className="text-[23px] font-bold md:text-right md:text-[25px] xl:text-[27px]">
@@ -193,7 +201,7 @@ export default function Work() {
               by their names. The response data comes with name, age and gender.
             </p>
 
-            <ul className="mt-[30px] flex flex-wrap justify-start gap-x-3 text-[14px] leading-[23px] md:justify-end md:text-[15px]">
+            <ul className={`${mono.className} mt-[30px] flex flex-wrap justify-start gap-x-3 text-[14px] leading-[23px] md:justify-end md:text-[15px]`}>
               <li>TypeScript</li>
               <li>React</li>
               <li>Swapi API</li>

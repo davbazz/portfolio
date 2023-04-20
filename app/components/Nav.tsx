@@ -1,11 +1,17 @@
 'use client'
 
 import { useState } from 'react'
-import { Outfit } from 'next/font/google'
+import { Outfit, DM_Mono } from 'next/font/google'
 
 const outfit = Outfit({
   subsets: ['latin'],
   weight: '400',
+  display: 'swap',
+})
+
+const mono = DM_Mono({
+  subsets: ['latin'],
+  weight: ['400'],
   display: 'swap',
 })
 
@@ -32,7 +38,7 @@ export default function Nav() {
   }
 
   return (
-    <nav className="py-[30px] lg:py-[40px] 2xl:py-[50px]">
+    <nav className={`${mono.className} py-[30px] lg:py-[40px] 2xl:py-[50px]`}>
       <div className="flex items-center justify-between">
         <a
           href="http://localhost:3000/"
@@ -46,45 +52,45 @@ export default function Nav() {
             <li>
               <a
                 href="#about"
-                className="flex w-full items-center justify-center gap-2"
+                className="flex w-full items-center justify-center gap-1"
               >
-                <span className="">01. </span>
+                <span>01.</span>
                 About
               </a>
             </li>
             <li>
               <a
                 href="#skills"
-                className="flex w-full items-center justify-center gap-2"
+                className="flex w-full items-center justify-center gap-1"
               >
-                <span className="">02. </span>
+                <span>02.</span>
                 Skills
               </a>
             </li>
             <li>
               <a
                 href="#work"
-                className="flex w-full items-center justify-center gap-2"
+                className="flex w-full items-center justify-center gap-1"
               >
-                <span className="">03. </span>
+                <span>03.</span>
                 Work
               </a>
             </li>
             <li>
               <a
                 href="#playground"
-                className="flex w-full items-center justify-center gap-2"
+                className="flex w-full items-center justify-center gap-1"
               >
-                <span className="">04. </span>
+                <span>04.</span>
                 Playground
               </a>
             </li>
             <li>
               <a
                 href="#contact"
-                className="flex w-full items-center justify-center gap-2"
+                className="flex w-full items-center justify-center gap-1"
               >
-                <span className="">05. </span>
+                <span>05.</span>
                 Contact
               </a>
             </li>
@@ -120,7 +126,7 @@ export default function Nav() {
                 className="flex w-full flex-col items-center justify-center"
                 onClick={toggleMenu}
               >
-                <span>01 . </span>
+                <span>01.</span>
                 About
               </a>
             </li>
@@ -130,7 +136,7 @@ export default function Nav() {
                 className="flex w-full flex-col items-center justify-center"
                 onClick={toggleMenu}
               >
-                <span>02 . </span>
+                <span>02.</span>
                 Skills
               </a>
             </li>
@@ -140,7 +146,7 @@ export default function Nav() {
                 className="flex w-full flex-col items-center justify-center"
                 onClick={toggleMenu}
               >
-                <span>03 . </span>
+                <span>03.</span>
                 Work
               </a>
             </li>
@@ -150,7 +156,7 @@ export default function Nav() {
                 className="flex w-full flex-col items-center justify-center"
                 onClick={toggleMenu}
               >
-                <span>04 . </span>
+                <span>04.</span>
                 Playground
               </a>
             </li>
@@ -160,7 +166,7 @@ export default function Nav() {
                 className="flex w-full flex-col items-center justify-center"
                 onClick={toggleMenu}
               >
-                <span>05 . </span>
+                <span>05.</span>
                 Contact
               </a>
             </li>

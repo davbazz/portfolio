@@ -1,4 +1,11 @@
 import Link from 'next/link'
+import { DM_Mono } from 'next/font/google'
+
+const mono = DM_Mono({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+})
 
 export default function Email() {
   return (
@@ -6,7 +13,7 @@ export default function Email() {
       <div className="flex flex-col items-center justify-end gap-8">
         <Link
           href="mailto:codingbazashvili@gmail.com"
-          className="vertical-text inline-block text-[16px]"
+          className={`${mono.className} vertical-text inline-block text-[16px]`}
         >
           codingbazashvili@gmail.com
         </Link>

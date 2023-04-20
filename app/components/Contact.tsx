@@ -1,4 +1,11 @@
 import Link from "next/link"
+import { DM_Mono } from 'next/font/google'
+
+const mono = DM_Mono({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+})
 
 export default function Contact() {
 	return (
@@ -7,7 +14,7 @@ export default function Contact() {
 			id="contact"
 		>
 			<div className="mx-auto flex flex-col justify-center">
-				<div className="flex flex-nowrap items-end justify-center gap-[8px] md:gap-[13px] leading-[26px]">
+				<div className={`${mono.className} flex flex-nowrap items-end justify-center gap-[8px] md:gap-[13px] leading-[26px]`}>
 					<span className="text-[15px] font-normal sm:mt-[4px] md:text-[18px] lg:text-[19px] xl:text-[20px]">
 						05.
 					</span>
@@ -17,7 +24,7 @@ export default function Contact() {
 					</h2>
 				</div>
 
-				<p className="text-center mt-[5px] md:mt-[10px] text-[34px] font-bold sm:mr-[10px] md:text-[38px] lg:text-[42px] xl:text-[46px]">
+				<p className="text-center mt-[5px] md:mt-[10px] text-[36px] font-bold sm:mr-[10px] md:text-[40px] lg:text-[44px] xl:text-[48px]">
 					Get In Touch
 				</p>
 
@@ -27,7 +34,7 @@ export default function Contact() {
 				
 				<Link 
 					href="mailto:codingbazashvili@gmail.com"
-					className="inline-block mx-auto mt-[40px] md:mt-[50px] px-[30px] py-[15px] border-2 border-black rounded-md text-[16px] md:text-[17px] xl:text-[18px]"
+					className={`${mono.className} inline-block mx-auto mt-[40px] md:mt-[50px] px-[30px] py-[15px] border-2 border-black rounded-md text-[16px] md:text-[17px] xl:text-[18px]`}
 				>
 					Email Me
 				</Link>
