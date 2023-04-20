@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from 'next/link'
 
 import { DM_Mono } from 'next/font/google'
 
@@ -10,10 +10,9 @@ const mono = DM_Mono({
 
 export default function Footer() {
   return (
-    <footer className="mx-auto mt-[50px] py-[20px] lg:py-0 sm:mt-[70px] md:mt-[90px]">
-
-      <div className="flex flex-col justify-center gap-3 lg:block text-center">
-        <ul className="flex justify-center items-center gap-5 sm:gap-7 lg:hidden">
+    <footer className="mx-auto mt-[50px] py-[20px] sm:mt-[70px] md:mt-[90px] lg:py-0">
+      <div className="flex flex-col justify-center gap-3 text-center lg:block">
+        <ul className="flex items-center justify-center gap-5 sm:gap-7 lg:hidden">
           <li>
             <Link
               href="https://www.linkedin.com/in/davidbazashvili"
@@ -75,9 +74,9 @@ export default function Footer() {
           </li>
         </ul>
 
-        <Link 
+        <Link
           href="https://github.com/davbazz/portfolio"
-          className={`${mono.className} inline-block mx-auto text-[14px] md:text-[15px] px-[10px] py-[10px] lg:px-[60px] lg:py-[40px]`}
+          className={`${mono.className} mx-auto inline-block px-[10px] py-[10px] text-[14px] font-semibold md:text-[15px] lg:px-[60px] lg:py-[40px]`}
         >
           Developed by David Bazashvili
         </Link>

@@ -17,7 +17,9 @@ export default function About() {
       <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-[5%]">
         <div className="lg:w-[60%]">
           <div className="flex flex-nowrap items-center justify-start gap-[2px] md:gap-[5px]">
-            <span className={`${mono.className} mt-[3px] text-[20px] font-normal sm:mt-[4px] md:text-[21px] xl:text-[22px]`}>
+            <span
+              className={`${mono.className} mt-[3px] text-[20px] font-normal sm:mt-[4px] md:text-[21px] xl:text-[22px]`}
+            >
               01.
             </span>
             <h2 className="mr-[10px] whitespace-nowrap text-[26px] font-bold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">

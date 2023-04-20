@@ -27,7 +27,9 @@ export default function Skills() {
       id="skills"
     >
       <div className="flex flex-nowrap items-center justify-start gap-[2px] md:gap-[5px]">
-        <span className={`${mono.className} mt-[3px] text-[20px] font-normal sm:mt-[4px] md:text-[21px] xl:text-[22px]`}>
+        <span
+          className={`${mono.className} mt-[3px] text-[20px] font-normal sm:mt-[4px] md:text-[21px] xl:text-[22px]`}
+        >
           02.
         </span>
 
