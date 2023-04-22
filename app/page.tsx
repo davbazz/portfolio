@@ -1,14 +1,14 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
+import Skills from './components/Skills'
 import Work from './components/Work'
+import Playground from './components/Playground'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import SocialLinks from './components/SocialLinks'
 import Email from './components/Email'
-
 import { Inter } from 'next/font/google'
-import Skills from './components/Skills'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -25,6 +25,7 @@ export default function Home() {
         <About />
         <Skills />
         <Work />
+        <Playground />
         <Contact />
         <Footer />
 
