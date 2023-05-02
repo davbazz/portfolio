@@ -15,7 +15,7 @@ export default function Contact() {
     >
       <div className="mx-auto flex flex-col justify-center">
         <div
-          className={`${mono.className} flex flex-nowrap items-end justify-center gap-[8px] leading-[26px] md:gap-[13px]`}
+          className={`${mono.className} flex flex-nowrap items-end justify-center gap-[8px] leading-[26px] text-secondary md:gap-[13px]`}
         >
           <span className="text-[15px] font-normal sm:mt-[4px] md:text-[18px] lg:text-[19px] xl:text-[20px]">
             05.
@@ -26,7 +26,7 @@ export default function Contact() {
           </h2>
         </div>
 
-        <p className="mt-[5px] text-center text-[36px] font-bold sm:mr-[10px] md:mt-[10px] md:text-[40px] lg:text-[44px] xl:text-[48px]">
+        <p className="mt-[5px] text-center text-[36px] font-bold text-main sm:mr-[10px] md:mt-[10px] md:text-[40px] lg:text-[44px] xl:text-[48px]">
           Get In Touch
         </p>
 
@@ -38,7 +38,7 @@ export default function Contact() {
 
         <Link
           href="mailto:codingbazashvili@gmail.com"
-          className={`${mono.className} mx-auto mt-[40px] inline-block rounded-md border-2 border-black px-[30px] py-[15px] text-[16px] md:mt-[50px] md:text-[17px] xl:text-[18px]`}
+          className={`${mono.className} mx-auto mt-[40px] inline-block rounded-md border-2 border-secondary px-[30px] py-[15px] text-[16px] text-secondary duration-150 hover:bg-secondary/10 md:mt-[50px] md:text-[17px] xl:text-[18px]`}
         >
           Email Me
         </Link>

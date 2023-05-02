@@ -18,7 +18,9 @@ const inter = Inter({
 
 export default function Home() {
   return (
-    <main className={`${inter.className} overflow-hidden overflow-y-hidden`}>
+    <main
+      className={`${inter.className} overflow-hidden overflow-y-hidden text-main/80`}
+    >
       <div className="relative mx-auto px-[24px] lg:max-w-[calc(100vw-80px)] lg:px-0 2xl:max-w-[calc(100vw-140px)]">
         <Nav />
         <Hero />

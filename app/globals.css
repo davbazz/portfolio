@@ -21,6 +21,10 @@ nav {
   overflow: hidden;
 }
 
+/* .blur-effect {
+  backdrop-filter: blur(1px);
+} */
+
 .close-x-1 {
   height: 2px;
   transform: translate(0px, 7px) rotate(45deg);
@@ -41,7 +45,7 @@ nav {
 }
 
 .move-menu-off {
-  right: -400px;
+  right: -500px;
 }
 
 .move-menu-on {
@@ -61,7 +65,7 @@ nav {
   left: 20px;
   position: absolute;
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid #6366f1;
   z-index: -1;
   border-radius: 6px;
   transition: all 300ms;
