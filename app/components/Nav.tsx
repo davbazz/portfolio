@@ -42,7 +42,7 @@ export default function Nav() {
       <div className="flex items-center justify-between">
         <a
           href="http://localhost:3000/"
-          className={`${outfit.className} text-[24px] md:mt-[-8px] md:text-[26px] lg:text-[28px] xl:mt-[-10px] xl:text-[30px] 2xl:text-[32px]`}
+          className={`${outfit.className} text-[24px] text-secondary md:mt-[-8px] md:text-[26px] lg:text-[28px] xl:mt-[-10px] xl:text-[30px] 2xl:text-[32px]`}
         >
           davbaz
         </a>
@@ -52,55 +52,55 @@ export default function Nav() {
             <li>
               <a
                 href="#about"
-                className="flex w-full items-center justify-center gap-1"
+                className="flex w-full items-center justify-center gap-1 p-1 duration-150 hover:text-secondary"
               >
-                <span>01.</span>
+                <span className="text-secondary">01.</span>
                 About
               </a>
             </li>
             <li>
               <a
                 href="#skills"
-                className="flex w-full items-center justify-center gap-1"
+                className="flex w-full items-center justify-center gap-1 p-1 duration-150 hover:text-secondary"
               >
-                <span>02.</span>
+                <span className="text-secondary">02.</span>
                 Skills
               </a>
             </li>
             <li>
               <a
                 href="#work"
-                className="flex w-full items-center justify-center gap-1"
+                className="flex w-full items-center justify-center gap-1 p-1 duration-150 hover:text-secondary"
               >
-                <span>03.</span>
+                <span className="text-secondary">03.</span>
                 Work
               </a>
             </li>
             <li>
               <a
                 href="#playground"
-                className="flex w-full items-center justify-center gap-1"
+                className="flex w-full items-center justify-center gap-1 p-1 duration-150 hover:text-secondary"
               >
-                <span>04.</span>
+                <span className="text-secondary">04.</span>
                 Playground
               </a>
             </li>
             <li>
               <a
                 href="#contact"
-                className="flex w-full items-center justify-center gap-1"
+                className="flex w-full items-center justify-center gap-1 p-1 duration-150 hover:text-secondary"
               >
-                <span>05.</span>
+                <span className="text-secondary">05.</span>
                 Contact
               </a>
             </li>
           </ul>
 
-          <div className="w-[90px] rounded-md border-2 border-black lg:w-[100px] xl:w-[120px]">
+          <div className="w-[90px] rounded-md border-2 border-secondary lg:w-[100px] xl:w-[120px]">
             <a
               href="/resume.pdf"
               target="_blank"
-              className="block w-full py-[9px] text-center text-[13px] lg:text-[16px] xl:py-[10px] 2xl:text-[18px]"
+              className="block w-full py-[9px] text-center text-[13px] text-secondary duration-150 hover:bg-secondary/10 lg:text-[16px] xl:py-[10px] 2xl:text-[18px]"
             >
               Resume
             </a>
@@ -109,75 +109,75 @@ export default function Nav() {
 
         <div
           onClick={toggleMenu}
-          className="close z-10 flex cursor-pointer flex-col items-end justify-between gap-[5px] p-[3px] md:hidden"
+          className="close z-10 mr-[-8px] flex cursor-pointer flex-col items-end justify-between gap-[5px] p-2 md:hidden"
         >
-          <span className="x-1 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300"></span>
-          <span className="x-2 inline-block h-[3px] w-[20px] rounded-md bg-black duration-300"></span>
-          <span className="x-3 inline-block h-[3px] w-[30px] rounded-md bg-black duration-300"></span>
+          <span className="x-1 inline-block h-[3px] w-[30px] rounded-md bg-secondary duration-300"></span>
+          <span className="x-2 inline-block h-[3px] w-[20px] rounded-md bg-secondary duration-300"></span>
+          <span className="x-3 inline-block h-[3px] w-[30px] rounded-md bg-secondary duration-300"></span>
         </div>
       </div>
 
-      <aside className="menu move-menu-off menu-width fixed top-0 flex h-[100dvh] flex-col justify-between rounded-l-lg bg-white px-[30px] py-[30px] duration-300 md:w-[320px]">
+      <aside className="menu move-menu-off menu-width fixed top-0 flex h-[100dvh] flex-col justify-between rounded-l-lg bg-third px-[30px] py-[30px] duration-300 md:w-[320px] z-5">
         <div className="mt-[70px]">
           <ul className="mx-auto flex flex-col items-center justify-between gap-6 text-[17px]">
             <li className="block w-full">
               <a
                 href="#about"
-                className="flex w-full flex-col items-center justify-center"
+                className="flex w-full flex-col items-center justify-center rounded-md p-1 text-main duration-300 hover:bg-secondary/10 hover:text-secondary"
                 onClick={toggleMenu}
               >
-                <span>01.</span>
+                <span className="text-secondary">01.</span>
                 About
               </a>
             </li>
             <li className="block w-full">
               <a
                 href="#skills"
-                className="flex w-full flex-col items-center justify-center"
+                className="flex w-full flex-col items-center justify-center rounded-md p-1 text-main duration-300 hover:bg-secondary/10 hover:text-secondary"
                 onClick={toggleMenu}
               >
-                <span>02.</span>
+                <span className="text-secondary">02.</span>
                 Skills
               </a>
             </li>
             <li className="block w-full">
               <a
                 href="#work"
-                className="flex w-full flex-col items-center justify-center"
+                className="flex w-full flex-col items-center justify-center rounded-md p-1 text-main duration-300 hover:bg-secondary/10 hover:text-secondary"
                 onClick={toggleMenu}
               >
-                <span>03.</span>
+                <span className="text-secondary">03.</span>
                 Work
               </a>
             </li>
             <li className="block w-full">
               <a
                 href="#playground"
-                className="flex w-full flex-col items-center justify-center"
+                className="flex w-full flex-col items-center justify-center rounded-md p-1 text-main duration-300 hover:bg-secondary/10 hover:text-secondary"
                 onClick={toggleMenu}
               >
-                <span>04.</span>
+                <span className="text-secondary">04.</span>
                 Playground
               </a>
             </li>
             <li className="block w-full">
               <a
                 href="#contact"
-                className="flex w-full flex-col items-center justify-center"
+                className="flex w-full flex-col items-center justify-center rounded-md p-1 text-main duration-300 hover:bg-secondary/10 hover:text-secondary"
                 onClick={toggleMenu}
               >
-                <span>05.</span>
+                <span className="text-secondary">05.</span>
                 Contact
               </a>
             </li>
           </ul>
         </div>
 
-        <div className="my-[40px] mx-auto w-[140px] rounded-md border-2 border-black sm:w-[160px]">
+        <div className="btn my-[40px] mx-auto w-[140px] rounded-md border-[1px] border-secondary bg-third duration-200 hover:bg-secondary/10 sm:w-[160px]">
           <a
             href="/resume.pdf"
             target="_blank"
-            className="block w-full py-[12px] text-center text-[17px]"
+            className="block w-full py-[12px] text-center text-[17px] text-secondary"
           >
             Resume
           </a>

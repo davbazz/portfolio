@@ -28,19 +28,21 @@ export default function Skills() {
     >
       <div className="flex flex-nowrap items-center justify-start gap-[2px] md:gap-[5px]">
         <span
-          className={`${mono.className} mt-[3px] text-[20px] font-normal sm:mt-[4px] md:text-[21px] xl:text-[22px]`}
+          className={`${mono.className} mt-[3px] text-[20px] font-normal text-secondary sm:mt-[4px] md:text-[21px] xl:text-[22px]`}
         >
           02.
         </span>
 
-        <h2 className="mr-[10px] whitespace-nowrap text-[26px] font-bold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
+        <h2 className="mr-[10px] whitespace-nowrap text-[26px] font-bold text-main sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
           Skills
         </h2>
 
-        <span className="inline-block h-[1px] w-full bg-black lg:w-[50%]"></span>
+        <span className="inline-block h-[1px] w-full rounded-md bg-main/90 lg:w-[50%]"></span>
       </div>
 
-      <p className={`${mono.className} mt-[40px] text-[17px] md:text-[18px]`}>
+      <p
+        className={`${mono.className} mt-[40px] text-[17px] text-secondary md:text-[18px]`}
+      >
         Here are some of the technologies I use:
       </p>
 
@@ -55,7 +57,7 @@ export default function Skills() {
               />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">1 year</p>
+              <p className="font-semibold text-main">1 year</p>
               <p>
                 <span className="italic">JavaScript</span> - a programming
                 language
@@ -67,7 +69,7 @@ export default function Skills() {
               <Image src={HTML} alt={`HTML`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">2 years</p>
+              <p className="font-semibold text-main">2 years</p>
               <p>
                 <span className="italic">HTML</span> - a mark up language
               </p>
@@ -78,7 +80,7 @@ export default function Skills() {
               <Image src={CSS} alt={`CSS`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">2 years</p>
+              <p className="font-semibold text-main">2 years</p>
               <p>
                 <span className="italic">CSS</span> - a stylesheet language
               </p>
@@ -89,7 +91,7 @@ export default function Skills() {
               <Image src={React} alt={`React`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">1 year</p>
+              <p className="font-semibold text-main">1 year</p>
               <p>
                 <span className="italic">React</span> - a JavaScript library for
                 building Front-End
@@ -101,7 +103,7 @@ export default function Skills() {
               <Image src={Next} alt={`Next.js`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">1 year</p>
+              <p className="font-semibold text-main">1 year</p>
               <p>
                 <span className="italic">Next.js</span> - a React framework for
                 building Front-End and Back-End
@@ -113,7 +115,7 @@ export default function Skills() {
               <Image src={Node} alt={`Node.js`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">{`<`}1 year</p>
+              <p className="font-semibold text-main">{`<`}1 year</p>
               <p>
                 <span className="italic">Node.js</span> - a Back-End JavaScript
                 runtime
@@ -132,7 +134,7 @@ export default function Skills() {
               />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">{`<`}1 year</p>
+              <p className="font-semibold text-main">{`<`}1 year</p>
               <p>
                 <span className="italic">TypeScript</span> - a programming
                 language
@@ -144,7 +146,7 @@ export default function Skills() {
               <Image src={Go} alt={`Go`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">{`<`}1 year</p>             
+              <p className="font-semibold text-main">{`<`}1 year</p>
               <p>
                 <span className="italic">Golang</span> - a programming language
               </p>
@@ -155,7 +157,7 @@ export default function Skills() {
               <Image src={Tailwind} alt={`Tailwind`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">1 year</p>
+              <p className="font-semibold text-main">1 year</p>
               <p>
                 <span className="italic">Tailwind</span> - a CSS framework
               </p>
@@ -166,7 +168,7 @@ export default function Skills() {
               <Image src={Git} alt={`Git`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">2 years</p>
+              <p className="font-semibold text-main">2 years</p>
               <p>
                 <span className="italic">Git</span> - a version control system
               </p>
@@ -177,7 +179,7 @@ export default function Skills() {
               <Image src={API} alt={`API`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">1 year</p>
+              <p className="font-semibold text-main">1 year</p>
               <p>
                 <span className="italic">API's</span> - a way for programs to
                 communicate with each other
@@ -189,7 +191,7 @@ export default function Skills() {
               <Image src={Database} alt={`Database`} className="h-16 w-16" />
             </div>
             <div className="max-w-[calc(100%-88px)]">
-              <p className="font-semibold">1 year</p>
+              <p className="font-semibold text-main">1 year</p>
               <p>
                 <span className="italic">Database</span> - a collection of data
                 stored and accessed electronically

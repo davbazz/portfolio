@@ -18,14 +18,14 @@ export default function About() {
         <div className="lg:w-[60%]">
           <div className="flex flex-nowrap items-center justify-start gap-[2px] md:gap-[5px]">
             <span
-              className={`${mono.className} mt-[3px] text-[20px] font-normal sm:mt-[4px] md:text-[21px] xl:text-[22px]`}
+              className={`${mono.className} mt-[3px] text-[20px] font-normal text-secondary sm:mt-[4px] md:text-[21px] xl:text-[22px]`}
             >
               01.
             </span>
-            <h2 className="mr-[10px] whitespace-nowrap text-[26px] font-bold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
+            <h2 className="mr-[10px] whitespace-nowrap text-[26px] font-bold text-main sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
               About Me
             </h2>
-            <span className="inline-block h-[1px] w-full bg-black "></span>
+            <span className="inline-block h-[1px] w-full rounded-md bg-main/90"></span>
           </div>
 
           <p className="mt-[40px] text-[16px] md:text-[17px] xl:text-[18px]">
@@ -64,6 +64,7 @@ export default function About() {
               className="rounded-md"
               loading="eager"
             />
+            <span className="absolute top-0 left-0 z-10 h-full w-full rounded-md bg-secondary/4 0 duration-300 hover:bg-transparent hover:after:bg-secondary/20"></span>
           </div>
         </div>
       </div>
