@@ -21,10 +21,6 @@ nav {
   overflow: hidden;
 }
 
-/* .blur-effect {
-  backdrop-filter: blur(1px);
-} */
-
 .close-x-1 {
   height: 2px;
   transform: translate(0px, 7px) rotate(45deg);
