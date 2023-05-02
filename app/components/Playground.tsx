@@ -64,26 +64,30 @@ export default function Playground() {
     >
       <div className="flex flex-nowrap items-center justify-start gap-[2px] md:gap-[5px]">
         <span
-          className={`${mono.className} mt-[3px] text-[20px] font-normal sm:mt-[4px] md:text-[21px] xl:text-[22px] text-secondary`}
+          className={`${mono.className} mt-[3px] text-[20px] font-normal text-secondary sm:mt-[4px] md:text-[21px] xl:text-[22px]`}
         >
           04.
         </span>
 
-        <h2 className="mr-[10px] whitespace-nowrap text-[26px] font-bold sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px] text-main">
+        <h2 className="mr-[10px] whitespace-nowrap text-[26px] font-bold text-main sm:mr-[10px] sm:text-[28px] lg:text-[30px] xl:text-[32px]">
           Playground
         </h2>
 
         <span className="inline-block h-[1px] w-full bg-main/80 lg:w-[300px]"></span>
       </div>
 
-      <h2 className={`${mono.className} mt-[40px] text-[17px] md:text-[18px] text-secondary`}>
+      <h2
+        className={`${mono.className} mt-[40px] text-[17px] text-secondary md:text-[18px]`}
+      >
         API & Database
       </h2>
 
       <div className="ml-[-24px] mt-[40px] flex w-[calc(100%+48px)] flex-col gap-10 rounded-md bg-[#e0e7ff] p-6 text-[16px] sm:ml-0 sm:w-full md:text-[17px] xl:text-[18px]">
         <p className="text-[17px] md:text-[18px]">
           In this section there is a simple demonstration of some of the{' '}
-          <span className={`${mono.className} text-secondary`}>API & Database</span>{' '}
+          <span className={`${mono.className} text-secondary`}>
+            API & Database
+          </span>{' '}
           functionalities. Let's begin with API.
         </p>
 
@@ -335,26 +339,26 @@ export default function Playground() {
 
         {dbItem && (
           <div className="flex flex-col justify-between gap-8 rounded-md bg-white p-4 sm:mx-auto sm:max-w-[550px] sm:flex-row sm:gap-12 md:w-[70%] md:min-w-[550px]">
-		  <div className="mx-auto w-[64%] max-w-[220px] sm:w-[30%]">
-			<img
-			  src={item.image}
-			  alt="image"
-			  loading="eager"
-			  width={'100%'}
-			  height={'100%'}
-			  className="mx-auto rounded-md"
-			/>
-		  </div>
-		  <div className="sm:flex sm:w-[70%] sm:flex-col sm:justify-between">
-			<p className={`font-semibold`}>{item.title}</p>
-			<p className="mt-[20px] text-[14px] sm:mt-[-30px] md:mt-0 md:text-[15px]">
-			  {item.description}
-			</p>
-			<p className="mt-[30px] text-[14px] font-semibold sm:mr-[10px] sm:mt-0 sm:text-right md:text-[15px]">
-			  {item.price}$
-			</p>
-		  </div>
-		</div>
+            <div className="mx-auto w-[64%] max-w-[220px] sm:w-[30%]">
+              <img
+                src={item.image}
+                alt="image"
+                loading="eager"
+                width={'100%'}
+                height={'100%'}
+                className="mx-auto rounded-md"
+              />
+            </div>
+            <div className="sm:flex sm:w-[70%] sm:flex-col sm:justify-between">
+              <p className={`font-semibold`}>{item.title}</p>
+              <p className="mt-[20px] text-[14px] sm:mt-[-30px] md:mt-0 md:text-[15px]">
+                {item.description}
+              </p>
+              <p className="mt-[30px] text-[14px] font-semibold sm:mr-[10px] sm:mt-0 sm:text-right md:text-[15px]">
+                {item.price}$
+              </p>
+            </div>
+          </div>
         )}
 
         <p>

@@ -64,7 +64,7 @@ export default function About() {
               className="rounded-md"
               loading="eager"
             />
-            <span className="absolute top-0 left-0 z-10 h-full w-full rounded-md bg-secondary/4 0 duration-300 hover:bg-transparent hover:after:bg-secondary/20"></span>
+            <span className="absolute top-0 left-0 z-10 h-full w-full rounded-md bg-secondary/40 duration-300 hover:bg-transparent hover:after:bg-secondary"></span>
           </div>
         </div>
       </div>

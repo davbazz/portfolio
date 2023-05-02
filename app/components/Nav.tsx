@@ -41,7 +41,7 @@ export default function Nav() {
     <nav className={`${mono.className} py-[30px] lg:py-[40px] 2xl:py-[50px]`}>
       <div className="flex items-center justify-between">
         <a
-          href="http://localhost:3000/"
+          href="https://portfolio-davbazz.vercel.app"
           className={`${outfit.className} text-[24px] text-secondary md:mt-[-8px] md:text-[26px] lg:text-[28px] xl:mt-[-10px] xl:text-[30px] 2xl:text-[32px]`}
         >
           davbaz
@@ -117,7 +117,7 @@ export default function Nav() {
         </div>
       </div>
 
-      <aside className="menu move-menu-off menu-width fixed top-0 flex h-[100dvh] flex-col justify-between rounded-l-lg bg-third px-[30px] py-[30px] duration-300 md:w-[320px] z-5">
+      <aside className="menu move-menu-off menu-width z-5 fixed top-0 flex h-[100dvh] flex-col justify-between rounded-l-lg bg-third px-[30px] py-[30px] duration-300 md:w-[320px]">
         <div className="mt-[70px]">
           <ul className="mx-auto flex flex-col items-center justify-between gap-6 text-[17px]">
             <li className="block w-full">
