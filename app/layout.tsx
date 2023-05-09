@@ -1,4 +1,5 @@
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
   title: 'David Bazashvili',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-back">{children}</body>
+      <body className="bg-back">
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
