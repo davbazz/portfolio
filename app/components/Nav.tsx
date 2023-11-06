@@ -41,7 +41,7 @@ export default function Nav() {
     <nav className={`${mono.className} py-[30px] lg:py-[40px] 2xl:py-[50px]`}>
       <div className="flex items-center justify-between">
         <a
-          href="https://portfolio-davbazz.vercel.app"
+          href="https://davidbazashvili.co.uk/"
           className={`${outfit.className} text-[24px] text-secondary md:mt-[-8px] md:text-[26px] lg:text-[28px] xl:mt-[-10px] xl:text-[30px] 2xl:text-[32px]`}
         >
           davbaz
