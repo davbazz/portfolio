@@ -3,8 +3,8 @@ import { Analytics } from '@vercel/analytics/react'
 
 export const metadata = {
   title: 'David Bazashvili',
-  description: 'David Bazashvili - Hire Front End Developer based in the UK',
-  keywords: 'front-end developer, hire developer',
+  description: 'David Bazashvili - Web Developer based in the UK',
+  keywords: 'web developer, hire web developer',
 }
 
 export default function RootLayout({
