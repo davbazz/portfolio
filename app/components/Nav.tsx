@@ -98,7 +98,7 @@ export default function Nav() {
 
           <div className="w-[90px] rounded-md border-2 border-secondary lg:w-[100px] xl:w-[120px]">
             <a
-              href="/resume.pdf"
+              href="/CV.pdf"
               target="_blank"
               className="block w-full py-[9px] text-center text-[13px] text-secondary duration-150 hover:bg-secondary/10 lg:text-[16px] xl:py-[10px] 2xl:text-[18px]"
             >
@@ -175,7 +175,7 @@ export default function Nav() {
 
         <div className="btn my-[40px] mx-auto w-[140px] rounded-md border-[1px] border-secondary bg-third duration-200 hover:bg-secondary/10 sm:w-[160px]">
           <a
-            href="/resume.pdf"
+            href="/CV.pdf"
             target="_blank"
             className="block w-full py-[12px] text-center text-[17px] text-secondary"
           >
