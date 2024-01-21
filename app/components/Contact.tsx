@@ -31,9 +31,12 @@ export default function Contact() {
         </p>
 
         <p className="mt-[12px] text-center text-[16px] md:mx-auto md:mt-[20px] md:inline-block md:max-w-[80%] md:text-[17px] lg:max-w-[600px] xl:text-[18px]">
-          I'm curently looking for new opportunities in Front-End / Full-Stack
+          {/* I'm curently looking for new opportunities in Front-End / Full-Stack
           development and I'd be glad to bring my expertise and personality to
-          your business! Don't hesitate to reach out to me!
+          your business! Don't hesitate to reach out to me! */}
+          Although I'm not currently looking for any new opportunities, my inbox
+          is always open. Whether you have a question or just want to say hi,
+          I'll try my best to get back to you!
         </p>
 
         <Link

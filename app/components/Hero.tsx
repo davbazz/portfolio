@@ -25,9 +25,15 @@ export default function Hero() {
       </h2>
 
       <p className="mt-[20px] max-w-[630px] text-[16px] md:mt-[30px] md:text-[17px] lg:mt-[40px] xl:mt-[50px] xl:text-[18px]">
-        I'm a software engineer specialising in Front End development with
+        {/* I'm a software engineer specialising in Front End development with
         extensive knowledge of the Back End. Currently, I'm looking for new
-        opportunities, and I'd be glad to bring my expertise to your business.
+        opportunities, and I'd be glad to bring my expertise to your business. */}
+        I'm a software engineer specialising in Front End development with
+        extensive knowledge of the Back End. Currently, I'm focused on building
+        accessible, human-centered products at{' '}
+        <a href="https://togethercreative.co.uk/" className="text-secondary">
+          Together Creative.
+        </a>
       </p>
 
       <div className="mt-[40px] w-full max-w-[270px] rounded-md border-2 border-secondary duration-150 hover:bg-secondary/10 md:mt-[50px] xl:mt-[60px]">
