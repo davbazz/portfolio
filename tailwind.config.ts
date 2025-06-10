@@ -6,6 +6,7 @@ export default {
     extend: {
       colors: {
         primary: '#FFFFFF',
+        secondary: 'oklch(0.21 0.034 264.665)',
       },
     },
   },

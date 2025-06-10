@@ -1,0 +1,55 @@
+.blog-component {
+  @apply relative;
+
+  .dot {
+    @apply absolute -inset-x-4 -inset-y-2.5 sm:rounded-2xl md:-inset-x-6 md:-inset-y-4;
+  }
+
+  .dot-svg {
+    @apply absolute right-full top-2 mr-6 hidden h-[calc(0.5rem+1px)] w-[calc(0.5rem+1px)] cursor-default overflow-visible text-slate-200 sm:block md:mr-12 dark:text-slate-600;
+
+    circle {
+      @apply fill-white dark:fill-slate-900;
+    }
+  }
+
+  .content {
+    @apply relative;
+
+    .title {
+      @apply pt-8 text-base font-semibold tracking-tight text-slate-900 lg:pt-0 dark:text-slate-200;
+    }
+
+    .description {
+      @apply mb-4 mt-2 line-clamp-2;
+    }
+
+    dl {
+      @apply absolute left-0 top-0 cursor-text lg:left-auto lg:right-full lg:mr-[calc(6.5rem+1px)];
+
+      dt {
+        @apply sr-only;
+      }
+
+      dd {
+        @apply whitespace-nowrap text-sm leading-6 dark:text-slate-400;
+      }
+    }
+  }
+
+  .link {
+    @apply flex w-fit items-center text-sm font-medium text-sky-500;
+
+    span {
+      @apply relative;
+
+      span {
+        @apply sr-only;
+      }
+    }
+  }
+
+  .arrow-right {
+    @apply relative ml-2.5 mt-px overflow-visible text-sky-300 dark:text-sky-700;
+  }
+}
