@@ -14,15 +14,15 @@ export function NavBar({ activeSection, setActiveSection }: NavBarProps) {
   const tabs: Section[] = ["About", "Experience", "Contact", "Blog"];
 
   return (
-    <div className="justify-between border-b border-zinc-800 py-1.5 pt-32">
+    <div className="scrollbar-none justify-between border-b border-zinc-800 px-5 py-1.5 pt-16 max-md:overflow-x-scroll sm:px-12 md:pt-32 lg:px-0">
       <nav
-        className="relative mx-auto flex max-w-3xl"
+        className="relative mx-auto flex max-sm:w-fit md:max-w-3xl"
         onMouseLeave={() => setHoveredTab(null)}
       >
         {tabs.map((tab, i) => (
           <button
             key={tab}
-            className={`w-1/4 cursor-pointer rounded-lg px-5 py-2 text-center hover:text-white ${activeSection === tab ? "text-white" : "text-zinc-400"}`}
+            className={`w-32 cursor-pointer rounded-lg px-5 py-2 text-center hover:text-white focus-visible:outline-2 focus-visible:outline-white sm:w-1/4 ${activeSection === tab ? "text-white" : "text-zinc-400"}`}
             onPointerEnter={() => setHoveredTab(i)}
             onClick={() => {
               setActiveSection(tab);
@@ -36,7 +36,7 @@ export function NavBar({ activeSection, setActiveSection }: NavBarProps) {
         <AnimatePresence>
           {(hoveredTab || hoveredTab === 0) && (
             <motion.span
-              className="absolute top-0 -z-10 h-full w-1/4 rounded-lg bg-zinc-900"
+              className="absolute top-0 -z-10 hidden h-full w-1/4 rounded-lg bg-zinc-900 lg:block"
               initial={{ opacity: 0, x: `${hoveredTab * 100}%` }}
               animate={{
                 opacity: 1,
