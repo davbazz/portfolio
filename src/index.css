@@ -6,7 +6,7 @@
 }
 
 :root {
-  @apply font-nunito bg-zinc-950 text-white;
+  @apply font-nunito scrollbar-none bg-zinc-950 text-white;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
