@@ -2,7 +2,7 @@ import { useState } from "react";
 import ReactLenis from "lenis/react";
 
 import { NavBar, About, Experience, Contact, Blog } from "@/components/core";
-import { Starfield } from "@/components/animations";
+import { Constellation } from "@/components/animations";
 import type { Section } from "@/components/core";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <ReactLenis root>
-      <Starfield />
+      <Constellation />
       <NavBar
         activeSection={activeSection}
         setActiveSection={setActiveSection}

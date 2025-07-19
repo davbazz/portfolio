@@ -1,4 +1,4 @@
-import { InViewReveal } from "@/components/animations";
+import { InViewReveal, RotateOnHover } from "@/components/animations";
 import { Body100, Header200, Image, Link } from "@/components/shared";
 import { Github, Linkedin } from "@/components/icons";
 import ProfileImage from "/david.jpg";
@@ -33,8 +33,24 @@ export function About() {
         </Body100>
 
         <div className="mt-6 flex items-center gap-4">
-          <Linkedin />
-          <Github />
+          <Link
+            href="https://www.linkedin.com/in/davidbazashvili"
+            external={true}
+            className="h-6 w-6"
+          >
+            <RotateOnHover>
+              <Linkedin />
+            </RotateOnHover>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/davidbazashvili"
+            external={true}
+            className="h-6 w-6"
+          >
+            <RotateOnHover>
+              <Github />
+            </RotateOnHover>
+          </Link>
         </div>
       </div>
     </InViewReveal>
