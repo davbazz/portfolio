@@ -41,7 +41,7 @@ export function Contact() {
           </InViewReveal>
           <InViewReveal delay={0.1}>
             <Link
-              href="https://www.linkedin.com/in/davidbazashvili"
+              href="https://t.me/davidbazashvili"
               external={true}
               className="h-6 w-6"
             >
@@ -52,7 +52,7 @@ export function Contact() {
           </InViewReveal>
           <InViewReveal delay={0.15}>
             <Link
-              href="https://www.linkedin.com/in/davidbazashvili"
+              href="https://wa.me/+447493836265"
               external={true}
               className="h-6 w-6"
             >

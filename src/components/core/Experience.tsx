@@ -7,7 +7,7 @@ import {
   Link,
 } from "@/components/shared";
 import { InViewReveal } from "@/components/animations";
-import { projectsBuilt, projectsMainteined } from "@/constants";
+import { projectsBuilt } from "@/constants";
 
 export function Experience() {
   return (
@@ -15,8 +15,9 @@ export function Experience() {
       <InViewReveal>
         <Header100>What I build</Header100>
         <Body100 className="mt-1 max-w-2xl">
-          Projects that I have either lead or been actively involved in building
-          from ground zero / implementing breaking changes to existing services
+          Projects that I have either led or been actively involved in, building
+          from the ground up or implementing breaking changes to existing
+          services.
         </Body100>
       </InViewReveal>
 
@@ -28,21 +29,21 @@ export function Experience() {
         ))}
       </div>
 
-      <InViewReveal>
+      {/* <InViewReveal>
         <Header100 className="mt-24">What I maintain</Header100>
         <Body100 className="mt-1 max-w-2xl">
           Projects that were built by other developers that I either maintain or
           help with bugfixes
         </Body100>
-      </InViewReveal>
+      </InViewReveal> */}
 
-      <div className="mt-20 flex flex-col gap-14 sm:gap-10">
+      {/* <div className="mt-20 flex flex-col gap-14 sm:gap-10">
         {projectsMainteined.map((project, i) => (
           <InViewReveal key={i} delay={i * 0.1}>
             <Project {...project} />
           </InViewReveal>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }
@@ -50,12 +51,20 @@ export function Experience() {
 export interface ProjectProps {
   image: string;
   url: string;
+  project: string;
   title: string;
-  description: React.ReactNode;
+  description: React.ReactNode[];
   tech: string[];
 }
 
-function Project({ image, url, title, description, tech }: ProjectProps) {
+function Project({
+  image,
+  url,
+  project,
+  title,
+  description,
+  tech,
+}: ProjectProps) {
   return (
     <Link
       href={url}
@@ -69,8 +78,15 @@ function Project({ image, url, title, description, tech }: ProjectProps) {
       />
 
       <div>
-        <Header200>{title}</Header200>
-        <Body100 className="mt-2">{description}</Body100>
+        <Header200>{project}</Header200>
+        <Body100 className="!text-white">{title}</Body100>
+        <ul className="mt-4">
+          {description.map((description, i) => (
+            <li className="mt-1 ml-4 list-disc" key={i}>
+              <Body100>{description}</Body100>
+            </li>
+          ))}
+        </ul>
         {tech.length > 0 && (
           <div className="mt-4 flex gap-2">
             {tech.map((tech, i) => (

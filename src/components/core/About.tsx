@@ -18,9 +18,9 @@ export function About() {
         <Header200 as="h1">David Bazashvili</Header200>
         <Body100 className="mt-0.5">Software Engineer</Body100>
         <Body100 className="mt-5">
-          I help businesses and individuals transform their digital presence by
-          developing efficient and user-friendly software solutions. I'm a
-          member of an amazing team at{" "}
+          I'am a Software Engineer with three years of experience in full-stack
+          web development, delivering high-quality solutions across both
+          front-end and back-end systems. I'm a member of an amazing team at{" "}
           <Link
             href="https://togethercreative.co.uk"
             external={true}
@@ -43,7 +43,7 @@ export function About() {
             </RotateOnHover>
           </Link>
           <Link
-            href="https://www.linkedin.com/in/davidbazashvili"
+            href="https://github.com/tc-david"
             external={true}
             className="h-6 w-6"
           >
