@@ -1,35 +1,11 @@
-import Bluedot from "/projects/bluedot.png";
 import EnergyAssessment from "/projects/energy-assessment.png";
+import Bluedot from "/projects/bluedot.png";
 import AnnualReport from "/projects/annual-report.png";
 import Rowden from "/projects/rowden.png";
-// import ZapUI from "/projects/zapui.png";
-// import Alchem from "/projects/alchem.png";
-// import Together from "/projects/together.png";
-// import EAISF from "/projects/eaisf.png";
-// import Thrive from "/projects/thrive.png";
+import Together from "/projects/together.png";
+import Alchem from "/projects/alchem.png";
+import ZapUI from "/projects/zapui.png";
 import type { ProjectProps } from "@/components/core";
-
-// Lead Software Engineer
-// Website for Blue Dot Network
-// Led development of an entire site with Next.js and Strapi to create a delightful user experience for the client to manage Blue Dot–certified projects.
-// Developed a secure, embeddable widget for displaying issued certifications on approved third-party websites.
-// Built an interactive map to dynamically display all certified project locations.
-// Together Creative
-// Software Engineer
-// Energy Assessment Platform for Google
-// Built a sustainability-sector platform for Google that helps manufacturers reduce costs and lower emissions
-// Developed an API with complex calculation systems using Nest.js to help users map industrial data and identify potential cost-saving opportunities.
-// Delivered a multilingual, user-friendly front-end interface using Angular.
-// Lead Software Engineer
-// Annual Report for European AI Fund
-// Led the development of an interactive Annual Report with React for the European AI Fund, enhancing engagement and usability.
-// Implemented seamless, animated transitions between report sections to create a polished browsing experience.
-// Built an internal library of reusable React components to accelerate future report development.
-// Software Engineer
-// Website for Rowden Technologies
-// Migrated the entire backend from Sanity to Strapi to improve performance, content management, and client experience.
-// Built a dynamic page generation feature with Next.js and Strapi, enabling the client to scale with ease.
-// Implemented draft mode for content creation to streamline editorial workflows.
 
 export const projectsBuilt: ProjectProps[] = [
   {
@@ -80,65 +56,39 @@ export const projectsBuilt: ProjectProps[] = [
     ],
     tech: ["Next.js", "Typescript", "Strapi CMS"],
   },
-  // {
-  //   image: ZapUI,
-  //   url: "https://zapui.togethercreative.co.uk",
-  //   title: "ZapUI Documentation",
-  //   description:
-  //     "Co-developed documentation site for our open-source Angular component library used across Together Creative projects to streamline UI development.",
-  //   tech: ["Angular", "Typescript"],
-  // },
+  {
+    image: Together,
+    url: "https://togethercreative.co.uk",
+    project: "Website for Together Creative",
+    title: "Software Engineer",
+    description: [
+      "Improved Lighthouse performance by 35%",
+      "Migrated the site from Next.js 12 to 14",
+      "Built additional pages using Next.js and Strapi CMS",
+    ],
+    tech: ["Next.js", "TypeScript", "Strapi CMS"],
+  },
+  {
+    image: Alchem,
+    url: "https://www.alchemtechnologies.com",
+    project: "Website for Alchem Technologies",
+    title: "Software Engineer",
+    description: [
+      "Implemented user-friendly, responsive UI updates on key pages",
+      "Built additional pages using Next.js and Strapi CMS",
+      "Provided ongoing support and maintenance for the company’s main website",
+    ],
+    tech: ["Next.js", "TypeScript", "Strapi CMS"],
+  },
+  {
+    image: ZapUI,
+    url: "https://zapui.togethercreative.co.uk",
+    project: "ZapUI Documentation Website",
+    title: "Software Engineer",
+    description: [
+      "Wrote over 50% of the documentation for the open-source component library in Angular",
+      "Built and tested components included in the library",
+    ],
+    tech: ["Angular", "TypeScript"],
+  },
 ];
-
-// export const projectsMainteined: ProjectProps[] = [
-//   {
-//     image: Alchem,
-//     url: "https://www.alchemtechnologies.com",
-//     project: "Website for Alchem Technologies",
-//     title: "Software Engineer",
-//     // description:
-//     //   "Been implementing small changes and bugfixes, as well as code maintenace",
-//     description: [
-//       ''
-//     ],
-//     tech: ["Next.js", "Typescript", "Strapi CMS"],
-//   },
-//   {
-//     image: Together,
-//     url: "https://togethercreative.co.uk",
-//     title: "Together Creative",
-//     description:
-//       "Improved Lighthouse performance by 35%, migrated the site from Next.js 12 to 14, and continue to maintain the company’s main brand website.",
-//     tech: ["Next.js", "Strapi CMS"],
-//   },
-//   {
-//     image: EAISF,
-//     url: "https://europeanaifund.org",
-//     title: "Europen Artificial Intelligence & Society Fund",
-//     description:
-//       "Refactored 30% of the site and added multiple new pages. Provide ongoing plugin updates. The fund supports responsible AI policy and research across Europe.",
-//     tech: ["Php", "Wordpress"],
-//   },
-//   {
-//     image: Thrive,
-//     url: "https://thriveldn.co.uk",
-//     title: "Thrive LDN",
-//     description:
-//       "Provide ongoing technical support for a public mental health initiative in London. Handle regular bugfixes, code edits, and plugin maintenance.",
-//     tech: ["Php", "Wordpress"],
-//   },
-// ];
-
-// list of projects
-// - bluedot
-// - Google
-// - rowden
-// - annual report
-// - togetherhub
-// - zap
-
-// maintained
-// - alchem
-// - together brand
-// - eiasf
-// - thrive

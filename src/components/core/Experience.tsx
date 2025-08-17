@@ -16,8 +16,7 @@ export function Experience() {
         <Header100>What I build</Header100>
         <Body100 className="mt-1 max-w-2xl">
           Projects that I have either led or been actively involved in, building
-          from the ground up or implementing breaking changes to existing
-          services.
+          from the ground up or implementing changes to existing services.
         </Body100>
       </InViewReveal>
 
@@ -28,22 +27,6 @@ export function Experience() {
           </InViewReveal>
         ))}
       </div>
-
-      {/* <InViewReveal>
-        <Header100 className="mt-24">What I maintain</Header100>
-        <Body100 className="mt-1 max-w-2xl">
-          Projects that were built by other developers that I either maintain or
-          help with bugfixes
-        </Body100>
-      </InViewReveal> */}
-
-      {/* <div className="mt-20 flex flex-col gap-14 sm:gap-10">
-        {projectsMainteined.map((project, i) => (
-          <InViewReveal key={i} delay={i * 0.1}>
-            <Project {...project} />
-          </InViewReveal>
-        ))}
-      </div> */}
     </section>
   );
 }
@@ -74,6 +57,7 @@ function Project({
       <Image
         src={image}
         alt="Bluedot Network"
+        loading="eager"
         className="aspect-video h-36 w-full max-w-60 rounded-lg sm:h-24 sm:w-40 sm:max-w-80"
       />
 
