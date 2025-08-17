@@ -14,7 +14,7 @@ export function NavBar({ activeSection, setActiveSection }: NavBarProps) {
   const tabs: Section[] = ["About", "Experience", "Contact", "Blog"];
 
   return (
-    <div className="scrollbar-none justify-between border-b border-zinc-800 px-5 py-1.5 pt-8 max-md:overflow-x-scroll sm:px-12 sm:pt-12 md:pt-32 lg:px-0">
+    <div className="scrollbar-none justify-between border-b border-zinc-800 px-5 py-1.5 pt-8 max-lg:touch-pan-x max-md:overflow-x-scroll sm:px-12 sm:pt-12 md:pt-32 lg:px-0">
       <nav
         className="relative mx-auto flex max-sm:w-fit md:max-w-3xl"
         onMouseLeave={() => setHoveredTab(null)}
