@@ -1,4 +1,5 @@
-// build a hook to use window width and hight
+"use client";
+
 import { useEffect, useState } from "react";
 
 export function useWindowSize() {
