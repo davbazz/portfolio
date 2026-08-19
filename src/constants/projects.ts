@@ -1,3 +1,4 @@
+import Trellis from "/projects/trellis.png";
 import EnergyAssessment from "/projects/energy-assessment.png";
 import Bluedot from "/projects/bluedot.png";
 import AnnualReport from "/projects/annual-report.png";
@@ -8,6 +9,18 @@ import ZapUI from "/projects/zapui.png";
 import type { ProjectProps } from "@/components/core";
 
 export const projectsBuilt: ProjectProps[] = [
+  {
+    image: Trellis,
+    url: "https://trellisapp.co.uk",
+    project: "Trellis Platform",
+    title: "Software Engineer",
+    description: [
+      "Owned full-stack feature delivery, written in Go — from database schema design through API route implementation to frontend integration in Angular",
+      "Built the HR and CRM modules end-to-end: leave/absence management and allocation tracking, plus contact management, each taken from data model to shipped UI",
+      "Contributed ~30% of the production codebase as one of a small engineering team working daily across the stack",
+    ],
+    tech: ["Go", "Typescript"],
+  },
   {
     image: EnergyAssessment,
     url: "https://energyassessment.eco",
